@@ -17,23 +17,55 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <title>Home</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=443350757"/>
-  <link rel="stylesheet" type="text/css" href="css/master_a-master.css?crc=231571101"/>
-  <link rel="stylesheet" type="text/css" href="css/index.css?crc=519912371" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?crc=86440247" id="pagesheet"/>
    </head>
  <body>
 
   <div class="clearfix borderbox" id="page"><!-- group -->
-   <div class="browser_width" id="u103-bw">
-    <div id="u103"><!-- simple frame --></div>
+   <div class="browser_width" id="u175-bw">
+    <div id="u175"><!-- simple frame --></div>
    </div>
-   <div class="clip_frame grpelem" id="u106"><!-- image -->
-    <img class="block" id="u106_img" src="images/logo.png?crc=146476345" alt="" data-image-width="118" data-image-height="36"/>
+   <div class="clearfix grpelem" id="pu149"><!-- column -->
+    <div class="clip_frame colelem" id="u149"><!-- image -->
+     <img class="block" id="u149_img" src="images/photo1.jpg?crc=3877498047" alt="" data-image-width="960" data-image-height="424"/>
+    </div>
+    <div class="browser_width colelem" id="u227-bw">
+     <div id="u227"><!-- simple frame --></div>
+    </div>
    </div>
-   <img class="grpelem" id="u116-4" alt="Home" src="images/u116-4.png?crc=4091681308" data-image-width="44"/><!-- rasterized frame -->
-   <img class="grpelem" id="u138-4" alt="Loja" src="images/u138-4.png?crc=4006876908" data-image-width="44"/><!-- rasterized frame -->
-   <img class="grpelem" id="u141-4" alt="Liquidação" src="images/u141-4.png?crc=74444799" data-image-width="87"/><!-- rasterized frame -->
-   <img class="grpelem" id="u144-4" alt="Atendimento" src="images/u144-4.png?crc=3861311715" data-image-width="99"/><!-- rasterized frame -->
-   <div class="verticalspacer" data-offset-top="0" data-content-above-spacer="49" data-content-below-spacer="500"></div>
+   <div id="u176-wrapper">
+    <div class="clip_frame" id="u176"><!-- image -->
+     <img class="block" id="u176_img" src="images/logo.png?crc=146476345" alt="" data-image-width="118" data-image-height="36"/>
+    </div>
+   </div>
+   <div class="clearfix grpelem" id="pu233"><!-- column -->
+    <div class="colelem" id="u233"><!-- simple frame --></div>
+    <div class="colelem" id="u242"><!-- simple frame --></div>
+    <div class="colelem" id="u248"><!-- simple frame --></div>
+   </div>
+   <div id="u178-4-wrapper">
+    <img id="u178-4" alt="Home" src="images/u178-4.png?crc=4091681308" data-image-width="44"/><!-- rasterized frame -->
+   </div>
+   <img class="grpelem" id="u230-4" alt="FRETE GRÁTIS PARA TODOS OS LOCAIS" src="images/u230-4.png?crc=3955313318" data-image-width="537"/><!-- rasterized frame -->
+   <div class="grpelem" id="u159"><!-- simple frame --></div>
+   <div class="clearfix grpelem" id="pu179-4"><!-- group -->
+    <div id="u179-4-wrapper">
+     <img id="u179-4" alt="Loja" src="images/u179-4.png?crc=4006876908" data-image-width="44"/><!-- rasterized frame -->
+    </div>
+    <div id="u180-4-wrapper">
+     <img id="u180-4" alt="Liquidação" src="images/u180-4.png?crc=74444799" data-image-width="87"/><!-- rasterized frame -->
+    </div>
+   </div>
+   <div class="clearfix grpelem" id="pu162-4"><!-- column -->
+    <img class="colelem" id="u162-4" alt="Primavera 2017" src="images/u162-4.png?crc=357595814" data-image-width="174"/><!-- rasterized frame -->
+    <div class="clearfix colelem" id="u166"><!-- group -->
+     <img class="grpelem" id="u172-4" alt="Confira!" src="images/u172-4.png?crc=183037812" data-image-width="152"/><!-- rasterized frame -->
+    </div>
+   </div>
+   <div id="u181-4-wrapper">
+    <img id="u181-4" alt="Atendimento" src="images/u181-4.png?crc=3861311715" data-image-width="99"/><!-- rasterized frame -->
+   </div>
+   <div class="verticalspacer" data-offset-top="2145" data-content-above-spacer="2145" data-content-below-spacer="62"></div>
   </div>
   <!-- Other scripts -->
   <script type="text/javascript">
@@ -45,6 +77,8 @@ var muse_init=function(){require.config({baseUrl:""});require(["jquery","museuti
 window.Muse.assets.check($);/* body */
 Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
 Muse.Utils.prepHyperlinks(true);/* body */
+Muse.Utils.resizeHeight('.browser_width');/* resize height */
+Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
 Muse.Utils.fullPage('#page');/* 100% height page */
 Muse.Utils.showWidgetsWhenReady();/* body */
 Muse.Utils.transformMarkupToFixBrowserProblems();/* body */

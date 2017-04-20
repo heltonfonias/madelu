@@ -2,11 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://madelu.github.io/index.html</loc>
-    <lastmod>2017-04-19</lastmod>
+    <lastmod>2017-04-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>http://madelu.github.io/images/logo.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://madelu.github.io/images/photo1.jpg</image:loc>
     </image:image>
   </url>
 </urlset>
